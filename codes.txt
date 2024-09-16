@@ -1,0 +1,51 @@
+docker pull postgres 
+
+docker image ls 
+
+docker ps  #list of containers 
+
+docker run --name some_name -e POSTGRESS_PASSWORD=mysecretpassword -d postgres 
+
+docker stop id or name
+
+docker run --name some_name -e POSTGRESS_PASSWORD=mysecretpassword -d postgres:13.8 # for versions
+
+postgres port 5432 
+
+docker container stop id or name 
+
+docker container ls  #running containers are shown 
+
+docker container ls -a # all containers are shown 
+
+docker container prune # removes all stopped container
+
+docker volume ls 
+
+docker pull mongo 
+
+docker run --name some-name -d mongo
+
+mongo port 27017
+
+docker run --name my-mongodb -p 4000:27017  -d mongo
+
+docker logs container_name or id 
+
+docker run --name some_name -p 27017:27017  -e MONGO_INITDB_ROOT_USERNAME: root -e   MONGO_INITDB_ROOT_PASSWORD: example --net moongo-network -d mongo
+
+docker compose -f file_name up 
+
+docker build -t sankalp20tiwari/hey-python-flask:0.0.1.RELEASE . 
+
+docker container run -d -p 3000:3000 sankalp20tiwari/hey-python-flask:0.0.1.RELEASE
+
+docker push sankalp20tiwari/hey-python-flask:0.0.1.RELEASE
+
+
+
+
+
+
+
+
